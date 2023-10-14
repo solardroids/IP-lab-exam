@@ -1,0 +1,19 @@
+k = int(input())
+s = input()
+
+
+for i in s:
+    x = ord(i)
+    for j in s:
+        if (k>26 or k<0) or (x<65 or x>90):
+            print("Invalid Input")
+            exit()
+        elif s.find(""):
+            print("Invalid Input")
+            exit()
+    else:
+        normalized_x = x-65
+        x2 = (normalized_x + k) % 26
+        unnormalized_x2 = x2 + 65
+        ch_x = chr(unnormalized_x2)
+        print(ch_x, end = "")
