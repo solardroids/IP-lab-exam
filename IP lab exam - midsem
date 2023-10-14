@@ -1,6 +1,7 @@
 k = int(input())
 s = input()
 
+# Hi
 
 for i in s:
     x = ord(i)
